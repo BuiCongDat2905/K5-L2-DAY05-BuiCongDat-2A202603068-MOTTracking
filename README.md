@@ -40,7 +40,7 @@ Sau bài lab, bạn có thể:
 1. Tạo repo bài nộp từ repo này, đặt tên theo mẫu (chi tiết ở `SUBMISSION.md`):
 
    ```text
-   K4-L2-DAY05-HoVaTen-MSSV-MOTTracking
+   K5-L2-DAY05-HoVaTen-MSSV-MOTTracking
    ```
 
 2. Đổi tên file báo cáo `report/individual/MSSV_HoTen.md` thành MSSV và họ tên của bạn, ví dụ `report/individual/20241234_NguyenVanAn.md`.
@@ -67,7 +67,7 @@ Mốc tính bằng phút kể từ lúc bắt đầu buổi thực hành (phút 
 ## Cấu trúc repo
 
 ```text
-K4-L2-DAY05-HoVaTen-MSSV-MOTTracking/
+K5-L2-DAY05-HoVaTen-MSSV-MOTTracking/
 ├── README.md            # trang này
 ├── RULES.md             # luật làm bài, AI, dữ liệu, nộp muộn
 ├── CHECKPOINTS.md       # CP0–CP4: làm gì, nộp gì, tự kiểm thế nào

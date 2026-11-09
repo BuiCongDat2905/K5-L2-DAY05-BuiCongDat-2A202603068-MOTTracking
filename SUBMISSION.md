@@ -9,16 +9,16 @@
 Repo đề bài (dùng chung cho level 2):
 
 ```text
-K4-L2-MOTTracking
+K5-L2-MOTTracking
 ```
 
 Repo bài nộp của bạn:
 
 ```text
-K4-L2-DAY05-HoVaTen-MSSV-MOTTracking
+K5-L2-DAY05-HoVaTen-MSSV-MOTTracking
 ```
 
-Ví dụ: `K4-L2-DAY05-NguyenVanAn-20241234-MOTTracking`.
+Ví dụ: `K5-L2-DAY05-NguyenVanAn-20241234-MOTTracking`.
 
 - Viết không dấu, không khoảng trắng; ngăn cách các phần bằng dấu `-`.
 - Ngày học dùng hai chữ số: `DAY05`.
@@ -27,7 +27,7 @@ Ví dụ: `K4-L2-DAY05-NguyenVanAn-20241234-MOTTracking`.
 ## Cấu trúc và file phải nộp
 
 ```text
-K4-L2-DAY05-HoVaTen-MSSV-MOTTracking/
+K5-L2-DAY05-HoVaTen-MSSV-MOTTracking/
 ├── src/exports/
 │   ├── HoVaTen_mot.zip            # BẮT BUỘC: MOT 1.1, không kèm ảnh
 │   ├── HoVaTen_cvat_video.zip     # BẮT BUỘC: CVAT for video 1.1, không kèm ảnh
@@ -79,7 +79,7 @@ Lệnh chỉ được in ra các ảnh chụp màn hình trong `report/individua
 
 ## Checklist
 
-- [ ] Repo đặt đúng tên `K4-L2-DAY05-HoVaTen-MSSV-MOTTracking`.
+- [ ] Repo đặt đúng tên `K5-L2-DAY05-HoVaTen-MSSV-MOTTracking`.
 - [ ] Có `src/exports/HoVaTen_mot.zip` (MOT 1.1) và `src/exports/HoVaTen_cvat_video.zip` (CVAT for video 1.1), cả hai không kèm ảnh.
 - [ ] Script tự kiểm báo 5 track ID, không có `[LỖI]`; đã dán kết quả vào báo cáo mục 5.
 - [ ] Báo cáo đã đổi tên thành `MSSV_HoTen.md` và điền đủ mục 1–6.
