@@ -69,7 +69,7 @@ Người bị che: `P_`
 
 ## 4. Tự review ID (CP3)
 
-Lượt 1 theo người (đi ngược từ frame 150), lượt 2 theo cảnh (nhảy 10 frame). Ít nhất 3 dòng; không có lỗi thì ghi một dòng "đã kiểm hai lượt, không lỗi".
+Lượt 1 theo người (đi ngược từ frame 149 về 0 trên CVAT), lượt 2 theo cảnh (nhảy 10 frame). Ít nhất 3 dòng; không có lỗi thì ghi một dòng "đã kiểm hai lượt, không lỗi".
 
 Loại lỗi dùng đúng một trong 7 mã: `id_switch`, `fragmentation`, `lost`, `merge`, `false_track`, `drift`, `flag`.
 
@@ -97,7 +97,7 @@ Lỗi nào chỉ lượt 2 (theo cảnh) mới thấy, lượt 1 (theo người)
 | Tên file CVAT for video 1.1 | |
 | Số track ID khác nhau trong `gt/gt.txt` (phải là 5) | |
 | Frame `outside` không có dòng trong `gt.txt` (đúng / sai) | |
-| Job đã completed trên CVAT | |
+| Job đã completed trên CVAT máy cá nhân | |
 
 Dán phần tóm tắt in ra từ `src/check_submission.py`:
 

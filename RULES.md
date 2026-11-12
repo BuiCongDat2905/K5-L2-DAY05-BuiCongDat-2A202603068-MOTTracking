@@ -2,7 +2,7 @@
 
 ## Loại bài
 
-**Cá nhân.** Mỗi học viên làm trên job CVAT của mình, tự review, tự nộp một repo riêng. Được trao đổi cách dùng CVAT với bạn, nhưng **không** gán hộ, không chép file xuất của nhau.
+**Cá nhân.** Mỗi học viên tự tạo task và làm trên CVAT chạy trên máy cá nhân, tự review, tự nộp một repo riêng. Được trao đổi cách dùng CVAT với bạn, nhưng **không** gán hộ, không chép file xuất của nhau.
 
 ## AI và công cụ
 
@@ -30,14 +30,14 @@ Nếu có dùng AI, ghi ngắn trong mục **7. Tài liệu tham khảo** của 
 
 - MOT17 dùng giấy phép **CC BY-NC-SA 3.0**: ghi nguồn, không dùng thương mại, chia sẻ lại cùng giấy phép.
 - **Không commit** ảnh frame, video, hay `gt.txt` gốc của MOT17 vào repo. Xuất từ CVAT luôn **bỏ chọn Save images**.
-- Không đưa dữ liệu lên dịch vụ CVAT công cộng hay nơi khác ngoài server lớp.
+- Lưu ảnh gốc trên máy cá nhân và chỉ đưa ảnh vào CVAT chạy trên chính máy đó. Không tải ảnh gốc lên dịch vụ CVAT công cộng.
 - Ảnh chụp màn hình trong báo cáo chỉ cắt vùng cần thiết, ghi nguồn "MOT17, MOTChallenge (Milan et al., 2016)".
 - Video có mặt người đi đường thật: không đăng lại ra ngoài lớp (liên hệ bài Ngày 6 về quyền riêng tư).
 
 ## Secret và tài khoản
 
 - Không commit mật khẩu CVAT, token, file `.env`.
-- Không chia sẻ tài khoản CVAT. Mỗi người chỉ mở job của mình.
+- Dùng tài khoản do bạn tạo trên CVAT máy cá nhân. Không chia sẻ mật khẩu.
 
 ## Nộp muộn
 

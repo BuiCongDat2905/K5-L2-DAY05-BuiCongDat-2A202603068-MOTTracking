@@ -44,7 +44,7 @@ K5-L2-DAY05-HoVaTen-MSSV-MOTTracking/
 | `report/individual/MSSV_HoTen.md` | Đổi tên theo MSSV và họ tên không dấu, ví dụ `20241234_NguyenVanAn.md`. Điền đủ mục 1–6 |
 | `report/individual/images/` | 3 ảnh đoạn bị che (trước, giữa, sau), đặt tên `che_1_truoc.png`, `che_2_giua.png`, `che_3_sau.png` |
 
-Ngoài repo, trên CVAT: job của bạn phải ở trạng thái **completed**.
+Trên CVAT máy cá nhân, chuyển job sang **completed**. Coach xem bài qua repo đã nộp.
 
 **Không nộp:** ảnh frame, video, `gt.txt` gốc của MOT17, file `.env`, mật khẩu.
 
@@ -84,6 +84,6 @@ Lệnh chỉ được in ra các ảnh chụp màn hình trong `report/individua
 - [ ] Script tự kiểm báo 5 track ID, không có `[LỖI]`; đã dán kết quả vào báo cáo mục 5.
 - [ ] Báo cáo đã đổi tên thành `MSSV_HoTen.md` và điền đủ mục 1–6.
 - [ ] Có 3 ảnh đoạn bị che trong `report/individual/images/` và đã chèn vào báo cáo.
-- [ ] Job trên CVAT đã chuyển sang **completed**.
+- [ ] Job trên CVAT máy cá nhân đã chuyển sang **completed**.
 - [ ] Không commit ảnh / video / `gt.txt` gốc của MOT17, không commit `.env` hay mật khẩu.
 - [ ] Đã nộp link repo trên LMS trước 23:59 GMT+7 ngày lab.

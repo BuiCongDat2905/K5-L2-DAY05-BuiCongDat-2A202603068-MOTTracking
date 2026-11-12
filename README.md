@@ -1,6 +1,6 @@
 # Lab Ngày 5 — Gán track ID trên 150 frame bằng keyframe và nội suy
 
-> **Loại bài: CÁ NHÂN.** Mỗi học viên làm một job CVAT riêng, tự review và tự nộp một repo riêng.
+> **Loại bài: CÁ NHÂN.** Mỗi học viên tự tạo một task trên CVAT chạy trên máy cá nhân, tự review và tự nộp một repo riêng.
 
 Bạn theo dõi **5 người đi bộ** trên **150 frame liên tiếp** (5 giây, 30 fps) của chuỗi MOT17-09 bằng **track mode** trong CVAT. Bạn đặt keyframe ở chỗ nội suy tuyến tính sai, xử lý một đoạn bị che bằng cờ `occluded` / `outside`, tự review ID hai lượt và xuất file **MOT 1.1**.
 
@@ -22,14 +22,14 @@ Sau bài lab, bạn có thể:
 |---|---|
 | Loại bài | Cá nhân |
 | Thời lượng | 240 phút (195′ làm bài + 15′ nghỉ + 30′ buffer) |
-| Dữ liệu | MOT17-09, frame 1–150, 1920×1080, 30 fps (coach đã tạo sẵn task) |
-| Công cụ | CVAT (server lớp), Python 3.9+ để chạy script tự kiểm (`src/check_submission.py`, không cần cài thư viện) |
+| Dữ liệu | MOT17-09, frame 1–150, 1920×1080, 30 fps ([cách tải 150 ảnh](docs/CVAT_LOCAL_SETUP.md#2-tải-150-ảnh-mot17-09)) |
+| Công cụ | CVAT Community chạy trên máy cá nhân, Python 3.9+ để chạy script tự kiểm (`src/check_submission.py`, không cần cài thư viện) |
 | Deadline | **23:59 GMT+7 ngày làm lab**, trừ khi coach thông báo khác trong 48h sau lab. Xem `SUBMISSION.md` |
 | Điểm | 100 điểm chính + tối đa 10 điểm bonus. Xem `RUBRIC.md` |
 
 ## Chuẩn bị trước buổi
 
-- [ ] Đăng nhập được CVAT của lớp, thấy job mang tên mình trong mục **Jobs**.
+- [ ] Tải 150 ảnh, mở CVAT trên máy và tạo task có một job từ frame 0 đến 149 theo [hướng dẫn CVAT local](docs/CVAT_LOCAL_SETUP.md).
 - [ ] Đã xem slide lý thuyết Ngày 5, nhất là phần keyframe, `occluded` / `outside`, năm lỗi ID, MOTA / IDF1.
 - [ ] Ôn phím `N` `F` `D` `V` `C` `K` `O` `Q` `M` `Ctrl+S` (bảng ở `docs/CVAT_CHEATSHEET.md`).
 - [ ] Máy có Python 3.9+ (`python --version`).
@@ -45,7 +45,7 @@ Sau bài lab, bạn có thể:
 
 2. Đổi tên file báo cáo `report/individual/MSSV_HoTen.md` thành MSSV và họ tên của bạn, ví dụ `report/individual/20241234_NguyenVanAn.md`.
 3. Đọc theo thứ tự: `RULES.md` → `docs/GUIDELINE.md` → `CHECKPOINTS.md` → `src/README.md` → `RUBRIC.md` → `SUBMISSION.md`.
-4. Mở CVAT, làm lần lượt CP0 → CP4 trong `CHECKPOINTS.md`.
+4. Mở task vừa tạo trên CVAT máy cá nhân, làm lần lượt CP0 → CP4 trong [CHECKPOINTS.md](CHECKPOINTS.md).
 
 ## Lịch buổi thực hành
 
@@ -75,6 +75,7 @@ K5-L2-DAY05-HoVaTen-MSSV-MOTTracking/
 ├── SUBMISSION.md        # tên repo, file phải nộp, deadline, checklist
 ├── docs/
 │   ├── GUIDELINE.md     # quy ước nhãn của lớp (box toàn thân, ngưỡng 2 giây…)
+│   ├── CVAT_LOCAL_SETUP.md  # tải dữ liệu và tạo task trên máy cá nhân
 │   ├── CVAT_CHEATSHEET.md
 │   └── MOT_FORMAT.md    # đọc file MOT 1.1, MOTA, IDF1
 ├── src/

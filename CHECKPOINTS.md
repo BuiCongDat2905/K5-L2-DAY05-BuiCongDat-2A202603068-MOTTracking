@@ -10,7 +10,7 @@ Quy ước nhãn đầy đủ: `docs/GUIDELINE.md`. Phím tắt: `docs/CVAT_CHEA
 
 - **Mục tiêu:** vào đúng job, cấu hình player, biết trước chỗ khó của 5 người trước khi vẽ.
 - **Cần làm:**
-  1. Đăng nhập CVAT → **Jobs** → mở job mang tên mình.
+  1. Mở CVAT trên máy cá nhân → **Tasks** → mở task bạn đã tạo theo [hướng dẫn CVAT local](docs/CVAT_LOCAL_SETUP.md) → mở job duy nhất trong task.
   2. **Settings → Player**: `Player step = 10`. **Settings → Workspace**: bật hiện text object, bật auto save.
   3. Xem hết 150 frame một lượt (`V` nhảy 10 frame = 15 màn). Ghi giờ bắt đầu.
   4. Với từng người `P1`–`P5`: ghi frame xuất hiện, frame cuối thấy được, frame rẽ / dừng / đổi tốc độ, frame bị che.
@@ -18,7 +18,7 @@ Quy ước nhãn đầy đủ: `docs/GUIDELINE.md`. Phím tắt: `docs/CVAT_CHEA
 - **Sản phẩm:** bảng mục **1. Xem trước** trong báo cáo đã điền đủ 5 dòng.
 - **Cần hiểu:** vì sao phải xem trước khi vẽ (biết chỗ nào nội suy sẽ sai để đặt keyframe ngay từ đầu).
 - **Tự kiểm tra:**
-  - [ ] Tên job trên thanh tiêu đề là tên mình.
+  - [ ] Task có đúng một job, từ frame **0** đến **149**, với nhãn `person`.
   - [ ] Bấm `V` nhảy đúng 10 frame.
   - [ ] Trong panel object không còn track của người mẫu.
 
@@ -33,7 +33,7 @@ Quy ước nhãn đầy đủ: `docs/GUIDELINE.md`. Phím tắt: `docs/CVAT_CHEA
   3. `V` nhảy tới; box lệch thì kéo cho khớp (thành keyframe).
   4. Keyframe dày hơn ở chỗ đổi hướng, đổi tốc độ, đổi kích thước, quanh đoạn che; thưa ở đoạn thẳng đều.
   5. Tua `F` từng frame qua mọi đoạn giữa hai keyframe; chỗ box trôi thì thêm keyframe.
-  6. Người ra khỏi khung trước frame 150: bật `outside` ở frame đầu tiên không còn thấy.
+  6. Người ra khỏi khung trước frame cuối (149 trên CVAT): bật `outside` ở frame đầu tiên không còn thấy.
   7. `Ctrl+S` sau mỗi người. Ghi giờ bắt đầu, giờ kết thúc và chỗ khó vào báo cáo mục **2**.
 - **Không làm:** không vẽ người ngoài 5 người; không dùng **Propagate** (`Ctrl+B`) vì nó tạo shape rời, không có ID chung.
 - **Sản phẩm:** 5 track trong CVAT; bảng mục **2. Keyframe và thời gian** có thời gian từng người.
@@ -68,7 +68,7 @@ Quy ước nhãn đầy đủ: `docs/GUIDELINE.md`. Phím tắt: `docs/CVAT_CHEA
 
 - **Mục tiêu:** tìm và sửa lỗi ID trong job của chính mình, gọi đúng tên lỗi.
 - **Cần làm:** duyệt như người lạ, **ghi lỗi trước, sửa sau**.
-  1. **Lượt 1, theo từng người (15′):** bật hiện ID. Với từng người, đi **ngược** từ frame 150 về frame 1 bằng `D` / `C`. Mỗi lượt chỉ nhìn một người, chậm lại ở chỗ hai người đi sát hoặc cắt nhau.
+  1. **Lượt 1, theo từng người (15′):** bật hiện ID. Với từng người, đi **ngược** từ frame 149 về frame 0 trên CVAT bằng `D` / `C`. Mỗi lượt chỉ nhìn một người, chậm lại ở chỗ hai người đi sát hoặc cắt nhau.
   2. **Lượt 2, theo cảnh (10′):** nhảy 10 frame mỗi bước bằng `V`; mỗi màn nhìn cả 5 box: ID có đổi người không, có box thừa / thiếu không.
   3. **Ghi và sửa (5′):** mỗi lỗi một dòng: frame, mã người, loại lỗi, một câu mô tả, lượt nào phát hiện. Sửa bằng Split / Merge / keyframe, đánh dấu "đã sửa", `Ctrl+S`.
 - **Sản phẩm:** bảng mục **4. Tự review ID** trong báo cáo, ít nhất 3 dòng (không có lỗi thì ghi một dòng "đã kiểm hai lượt, không lỗi") và phần tổng hợp theo loại lỗi.
@@ -93,7 +93,7 @@ Quy ước nhãn đầy đủ: `docs/GUIDELINE.md`. Phím tắt: `docs/CVAT_CHEA
 
   4. Đọc kết quả script, sửa trên CVAT nếu có `[LỖI]`, xuất lại. Dán phần tóm tắt của script vào báo cáo mục **5**.
   5. Điền số keyframe từng người (lấy từ script) vào mục **2**, tính keyframe / 100 frame.
-  6. Viết mục **6. Ba câu kết**. Ghi giờ kết thúc. Chuyển job sang **completed** trên CVAT.
+  6. Viết mục **6. Ba câu kết**. Ghi giờ kết thúc. Chuyển job sang **completed** trên CVAT máy cá nhân.
 - **Sản phẩm:** 2 file trong `src/exports/`; báo cáo đủ mục 1–6; job ở trạng thái completed.
 - **Cần hiểu:** đọc được từng cột của `gt.txt` (`docs/MOT_FORMAT.md`); vì sao frame `outside` không có dòng còn frame `occluded` vẫn có; MOTA khác IDF1 ở đâu.
 - **Tự kiểm tra:**

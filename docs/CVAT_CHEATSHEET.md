@@ -4,7 +4,7 @@ Bảng phím đầy đủ trong CVAT: bấm `F1`.
 
 ## Cấu hình một lần khi mở job
 
-1. Vào **Jobs** (không vào trang Task), mở job có tên mình. Sai job là gán vào dữ liệu người khác.
+1. Trên CVAT máy cá nhân, vào **Tasks**, chọn task của bạn rồi mở job duy nhất. Xem [cách tải ảnh và tạo task](CVAT_LOCAL_SETUP.md).
 2. **Settings → Player**: `Player step = 10` để `V` / `C` nhảy 10 frame.
 3. **Settings → Workspace**: bật hiện text của object (ID và nhãn trên box), bật auto save.
 
@@ -49,6 +49,6 @@ Menu job → **Export job dataset**:
 1. Định dạng **MOT 1.1**, **bỏ chọn Save images** → đổi tên thành `HoVaTen_mot.zip`.
 2. Định dạng **CVAT for video 1.1**, bỏ chọn Save images → đổi tên thành `HoVaTen_cvat_video.zip`. File này giữ cờ keyframe, MOT 1.1 thì không.
 
-## Server chậm
+## CVAT chạy chậm trên máy
 
 Đóng tab khác, dùng Chrome hoặc Edge, ẩn hoặc khóa (lock) object đã xong.
