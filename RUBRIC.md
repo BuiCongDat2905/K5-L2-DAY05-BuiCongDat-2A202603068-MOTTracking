@@ -2,7 +2,7 @@
 
 Chấm theo từng học viên. **Đạt: từ 70/100 điểm chính và không còn `id_switch` nào chưa giải thích trong báo cáo.**
 
-Coach so file MOT 1.1 của bạn với ground truth của 5 người mục tiêu: ghép theo IoU ≥ 0,5 ở từng frame, đếm FN, FP, IDSW, Frag, tính MOTA và IDF1; đếm keyframe từ file CVAT for video 1.1; đối chiếu bảng tự review trong báo cáo với lỗi thật tìm được.
+Coach dùng MSSV để [xác nhận mã đề và lọc đúng 5 người](docs/MOT_FORMAT.md#2-coach-chấm-file-của-bạn-thế-nào). Sau đó so file MOT 1.1 của bạn với ground truth của 5 người mục tiêu: ghép theo IoU ≥ 0,5 ở từng frame, đếm FN, FP, IDSW, Frag, tính MOTA và IDF1; đếm keyframe từ file CVAT for video 1.1; đối chiếu bảng tự review trong báo cáo với lỗi thật tìm được.
 
 ## Điểm chính (100)
 

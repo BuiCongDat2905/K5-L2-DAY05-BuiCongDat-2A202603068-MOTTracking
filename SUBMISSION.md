@@ -41,12 +41,12 @@ K5-L2-DAY05-HoVaTen-MSSV-MOTTracking/
 |---|---|
 | `src/exports/HoVaTen_mot.zip` | Xuất từ CVAT, định dạng **MOT 1.1**, bỏ chọn Save images. Bên trong có `gt/gt.txt` |
 | `src/exports/HoVaTen_cvat_video.zip` | Xuất từ CVAT, định dạng **CVAT for video 1.1**, bỏ chọn Save images. Bên trong có `annotations.xml` |
-| `report/individual/MSSV_HoTen.md` | Đổi tên theo MSSV và họ tên không dấu, ví dụ `20241234_NguyenVanAn.md`. Điền đủ mục 1–6 |
+| `report/individual/MSSV_HoTen.md` | Đổi tên theo MSSV và họ tên không dấu, ví dụ `20241234_NguyenVanAn.md`. Ghi mã đề A/B/C ở mục 0 và điền đủ mục 1–6 |
 | `report/individual/images/` | 3 ảnh đoạn bị che (trước, giữa, sau), đặt tên `che_1_truoc.png`, `che_2_giua.png`, `che_3_sau.png` |
 
 Trên CVAT máy cá nhân, chuyển job sang **completed**. Coach xem bài qua repo đã nộp.
 
-**Không nộp:** ảnh frame, video, `gt.txt` gốc của MOT17, file `.env`, mật khẩu.
+**Không nộp:** ảnh frame, bảng nhận diện P1–P5, video, `gt.txt` gốc của MOT17, file `.env`, mật khẩu.
 
 ## Nơi nộp
 

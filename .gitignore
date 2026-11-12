@@ -12,3 +12,7 @@ img1/
 *.avi
 seqinfo.ini
 MOT17*/
+
+# CVAT local lab preparation
+.lab-local/
+.venv/

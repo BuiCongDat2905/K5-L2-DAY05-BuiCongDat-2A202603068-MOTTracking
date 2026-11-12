@@ -10,7 +10,7 @@ Quy ước nhãn đầy đủ: `docs/GUIDELINE.md`. Phím tắt: `docs/CVAT_CHEA
 
 - **Mục tiêu:** vào đúng job, cấu hình player, biết trước chỗ khó của 5 người trước khi vẽ.
 - **Cần làm:**
-  1. Mở CVAT trên máy cá nhân → **Tasks** → mở task bạn đã tạo theo [hướng dẫn CVAT local](docs/CVAT_LOCAL_SETUP.md) → mở job duy nhất trong task.
+  1. Mở link **Job** và bảng nhận diện P1–P5 của đề bạn nhận theo [hướng dẫn CVAT local](docs/CVAT_LOCAL_SETUP.md). Ghi mã đề vào mục **0** của báo cáo.
   2. **Settings → Player**: `Player step = 10`. **Settings → Workspace**: bật hiện text object, bật auto save.
   3. Xem hết 150 frame một lượt (`V` nhảy 10 frame = 15 màn). Ghi giờ bắt đầu.
   4. Với từng người `P1`–`P5`: ghi frame xuất hiện, frame cuối thấy được, frame rẽ / dừng / đổi tốc độ, frame bị che.
@@ -49,7 +49,7 @@ Quy ước nhãn đầy đủ: `docs/GUIDELINE.md`. Phím tắt: `docs/CVAT_CHEA
 
 - **Mục tiêu:** người bị che có cờ đúng và **giữ cùng ID** khi hiện lại trong vòng 2 giây.
 - **Cần làm:**
-  1. Tìm người bị che trong 5 người. Ghi 4 mốc: bắt đầu che một phần, mất hẳn, hiện lại, thấy rõ trở lại.
+  1. Theo dõi **P1**, người được chọn cho bài xử lý che khuất ở cả ba đề. Ghi 4 mốc: bắt đầu che một phần, mất hẳn, hiện lại, thấy rõ trở lại.
   2. Che một phần: bật `occluded` (`Q`); box vẫn bao toàn thân ước lượng.
   3. Mất hẳn: bật `outside` (`O`) từ frame mất hẳn. Frame hiện lại: tắt `outside`, chỉnh box, đây là keyframe mới.
   4. Áp dụng ngưỡng 60 frame (mục 3 của `docs/GUIDELINE.md`) để quyết định cùng ID hay ID mới.

@@ -37,6 +37,8 @@ Nguồn: [CVAT docs — MOT format](https://docs.cvat.ai/docs/dataset_management
 
 ## 2. Coach chấm file của bạn thế nào
 
+Coach kiểm tra mã đề ghi trong báo cáo bằng `python src/setup_local_lab.py --mssv MSSV --assignment-only`. Tra năm MOT ID tương ứng trong `variants` của [lab_variants.json](../src/lab_variants.json), theo thứ tự P1–P5. Từ GT gốc `train/MOT17-09-DPM/gt/gt.txt`, lấy frame 1–150, năm MOT ID này, `mark=1`, `class=1` và `visibility>0`. Hàng có `visibility=0` là mốc tham chiếu cho CP2 và được bỏ khỏi tập box cần ghép, vì học viên đặt `outside` khi mất hẳn. Dùng file CVAT XML và ảnh minh chứng để soát cờ và tính liên tục của ID qua đoạn đó.
+
 Ở mỗi frame, box của bạn được ghép với box ground truth (GT) của 5 người nếu **IoU ≥ 0,5**, mỗi box chỉ ghép một lần. Sau đó đếm:
 
 | Ký hiệu | Đếm cái gì |

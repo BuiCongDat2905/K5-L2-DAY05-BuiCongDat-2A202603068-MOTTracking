@@ -6,7 +6,7 @@ Một người thật, một track ID. Không chắc thì **ghi chú và hỏi c
 
 ## 1. Đối tượng gán
 
-- Chỉ gán **5 người được giao** `P1`–`P5` theo bảng giao việc của coach. Không vẽ người khác (người khác sẽ thành `false_track` / FP).
+- Chỉ gán **5 người được giao** `P1`–`P5` theo bảng nhận diện mà script tạo cho đề A/B/C của bạn. Không vẽ người khác (người khác sẽ thành `false_track` / FP).
 - Nhãn: `person`, công cụ **Rectangle**, chế độ **Track** (không phải Shape).
 - Đặt tên hoặc ghi chú object là `P1`, `P2`… để review dễ đối chiếu.
 

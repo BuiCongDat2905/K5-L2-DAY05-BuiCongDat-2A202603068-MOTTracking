@@ -1,6 +1,6 @@
 # Lab Ngày 5 — Gán track ID trên 150 frame bằng keyframe và nội suy
 
-> **Loại bài: CÁ NHÂN.** Mỗi học viên tự tạo một task trên CVAT chạy trên máy cá nhân, tự review và tự nộp một repo riêng.
+> **Loại bài: CÁ NHÂN.** Mỗi học viên chạy script để nhận đề A/B/C theo MSSV và tạo task trên CVAT máy cá nhân, tự review và tự nộp một repo riêng.
 
 Bạn theo dõi **5 người đi bộ** trên **150 frame liên tiếp** (5 giây, 30 fps) của chuỗi MOT17-09 bằng **track mode** trong CVAT. Bạn đặt keyframe ở chỗ nội suy tuyến tính sai, xử lý một đoạn bị che bằng cờ `occluded` / `outside`, tự review ID hai lượt và xuất file **MOT 1.1**.
 
@@ -22,18 +22,18 @@ Sau bài lab, bạn có thể:
 |---|---|
 | Loại bài | Cá nhân |
 | Thời lượng | 240 phút (195′ làm bài + 15′ nghỉ + 30′ buffer) |
-| Dữ liệu | MOT17-09, frame 1–150, 1920×1080, 30 fps ([cách tải 150 ảnh](docs/CVAT_LOCAL_SETUP.md#2-tải-150-ảnh-mot17-09)) |
-| Công cụ | CVAT Community chạy trên máy cá nhân, Python 3.9+ để chạy script tự kiểm (`src/check_submission.py`, không cần cài thư viện) |
+| Dữ liệu | MOT17-09, frame 1–150, 1920×1080, 30 fps ([tải ảnh và tạo task](docs/CVAT_LOCAL_SETUP.md)) |
+| Công cụ | CVAT Community chạy trên máy cá nhân, Python 3.11+ để chạy script tạo task và tự kiểm |
 | Deadline | **23:59 GMT+7 ngày làm lab**, trừ khi coach thông báo khác trong 48h sau lab. Xem `SUBMISSION.md` |
 | Điểm | 100 điểm chính + tối đa 10 điểm bonus. Xem `RUBRIC.md` |
 
 ## Chuẩn bị trước buổi
 
-- [ ] Tải 150 ảnh, mở CVAT trên máy và tạo task có một job từ frame 0 đến 149 theo [hướng dẫn CVAT local](docs/CVAT_LOCAL_SETUP.md).
+- [ ] [Chạy script CVAT local](docs/CVAT_LOCAL_SETUP.md), nhập MSSV, mở link job và kiểm tra frame 0–149.
 - [ ] Đã xem slide lý thuyết Ngày 5, nhất là phần keyframe, `occluded` / `outside`, năm lỗi ID, MOTA / IDF1.
 - [ ] Ôn phím `N` `F` `D` `V` `C` `K` `O` `Q` `M` `Ctrl+S` (bảng ở `docs/CVAT_CHEATSHEET.md`).
-- [ ] Máy có Python 3.9+ (`python --version`).
-- [ ] Nhận từ coach: **bảng giao việc** (`P1`–`P5`, frame xuất hiện đầu, ảnh khoanh vùng từng người).
+- [ ] Máy có Python 3.11 trở lên (`python --version`).
+- [ ] Mở **bảng nhận diện P1–P5** của đề A/B/C theo đường dẫn script in ra.
 
 ## Cách bắt đầu
 
@@ -80,6 +80,9 @@ K5-L2-DAY05-HoVaTen-MSSV-MOTTracking/
 │   └── MOT_FORMAT.md    # đọc file MOT 1.1, MOTA, IDF1
 ├── src/
 │   ├── README.md
+│   ├── setup_local_lab.py    # nhận đề theo MSSV và tạo task/job
+│   ├── lab_variants.json    # bộ người theo mã đề
+│   ├── requirements-local.txt
 │   ├── check_submission.py   # script tự kiểm file xuất
 │   └── exports/              # BẠN ĐẶT 2 FILE XUẤT TỪ CVAT VÀO ĐÂY
 └── report/individual/
