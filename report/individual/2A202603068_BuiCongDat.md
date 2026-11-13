@@ -63,9 +63,9 @@ Người bị che: `P1` (MOT ID 1, track CVAT số 1)
 
 Ảnh chụp màn hình:
 
-![Trước khi che](image.png)<br>
-![Giữa đoạn che, thấy cờ trên panel object](image-1.png)
-![Sau khi hiện lại, cùng ID](image-2.png)
+![Trước khi che](images\che_1_truoc.png)<br>
+![Giữa đoạn che, thấy cờ trên panel object](images\che_2_giua.png)<br>
+![Sau khi hiện lại, cùng ID](images\che_3_sau.png)
 
 ## 4. Tự review ID (CP3)
 
