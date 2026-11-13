@@ -8,7 +8,7 @@
 - MSSV: 2A202603068
 - Mã đề (A/B/C): B (09-B) — P1 = MOT ID 1, P2 = 19, P3 = 20, P4 = 21, P5 = 22 theo `src/lab_variants.json`
 - Email: datcongh43@gmail.com
-- Link repository: https://github.com/BuiCongDat2905/K5-L2-Day5-2A202603068-BuiCongDat-MOTTracking.git
+- Link repository: https://github.com/BuiCongDat2905/K5-L2-DAY05-BuiCongDat-2A202603068-MOTTracking.git
 - Giờ bắt đầu: 16:00 (13/11)
 - Giờ kết thúc: 19:30 (13/11)
 
