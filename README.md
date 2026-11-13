@@ -47,6 +47,14 @@ Sau bài lab, bạn có thể:
 3. Đọc theo thứ tự: `RULES.md` → `docs/GUIDELINE.md` → `CHECKPOINTS.md` → `src/README.md` → `RUBRIC.md` → `SUBMISSION.md`.
 4. Mở task vừa tạo trên CVAT máy cá nhân, làm lần lượt CP0 → CP4 trong [CHECKPOINTS.md](CHECKPOINTS.md).
 
+## Bộ công cụ tự kiểm cho học viên
+
+- [Hướng dẫn CVAT CP0–CP4 bằng ảnh](tools/lab05/huong-dan-cvat.html), có cách lọc từng ID ở CP3.
+- [Cách chạy timeline offline](tools/lab05/index.html), dùng hai ZIP do bạn xuất để tìm frame cần xem lại.
+- [Sandbox đối chiếu hai bản gán](tools/lab05/sandbox.html), tự chọn sau khi hoàn tất bài chính.
+
+Sau khi clone hoặc tải ZIP của repo, mở `tools/lab05/index.html` bằng trình duyệt. Các công cụ này hỗ trợ tự kiểm và giữ nguyên yêu cầu nộp bài.
+
 ## Lịch buổi thực hành
 
 Mốc tính bằng phút kể từ lúc bắt đầu buổi thực hành (phút 0), áp dụng cho cả lab sáng lẫn lab chiều.
